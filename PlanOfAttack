@@ -1,0 +1,14 @@
+Existing K3S deployment.
+
+Goal: Redeploy from development to production env. 
+Refactor full cluster to be quickly deployable and scaleable
+Charts should be available here and updated here.
+
+Easier faster.
+
+
+Action Plan:
+Note down Helm charts used in current deployment
+-> Note any amendedments made to the Charts AFTER deployment of HELM chart.
+-> Create own HELM chart to support stable operation
+-> Create a straight forward deployment steps that are easy to follow and repeatable.
