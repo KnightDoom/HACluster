@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  ARGSS: -d /root/.config/zotify/downloads.txt
+  PASSWORD: {{ .Values.zotifyConfig.password }}
+  SLEEP_WAIT: {{ .Values.zotifyConfig.sleepWait }}
+  USERNAME: {{ .Values.zotifyConfig.username }}
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-args
+  namespace: {{ .Release.Namespace }}

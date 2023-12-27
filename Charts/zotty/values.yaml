@@ -1,0 +1,28 @@
+# Default values for zotty.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+#replicaCount: 1
+
+image:
+  #repository: nginx
+  imagePullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: latest
+
+persistence:
+  musicFolderSubPath: Music
+  musicFolderPVCName: plexlib
+  configPVCName: zotify-config
+
+zotifyConfig:
+  username: ""
+  password: ""
+  sleepWait: "500"
+
+spotify:
+  playlistlinks: "https://open.spotify.com/playlist/32HIWYRxpgNHgygcWY5e21?si=e03d10281dfc4e1d
+    https://open.spotify.com/playlist/3GxiCySEkrNqIli3YMz81a?si=7cbf2f1a99ab4492
+    https://open.spotify.com/playlist/41iqU2P1n4rdDoSt0R3HCc?si=e22d37f1473c479c"
+#nameOverride: ""
+#fullnameOverride: ""
