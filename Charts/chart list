@@ -1,0 +1,20 @@
+NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                                   APP VERSION
+bazarr                          media           1               2023-10-14 20:13:21.156597036 +0000 UTC deployed        bazarr-15.0.10                          1.3.0
+calibre                         media           1               2023-08-19 10:26:45.736183272 +0000 UTC deployed        calibre-11.0.5                          6.25.0
+calibreweb                      media           1               2023-08-19 17:12:29.812192642 +0000 UTC deployed        calibre-web-14.0.27                     0.6.20
+cert-manager                    cert-manager    1               2023-07-22 17:57:50.664704241 -0400 EDT deployed        cert-manager-v1.12.0                    v1.12.0
+cloudnative-pg                  cnpg-system     1               2023-10-14 22:09:00.3724719 +0000 UTC   deployed        cloudnative-pg-2.0.2                    1.20.0
+heimdall                        default         1               2023-03-18 06:33:24.810617319 +0000 UTC deployed        heimdall-1.0.23                         2.5.5
+home-assistant                  automation      1               2023-06-22 03:15:26.541603114 +0000 UTC deployed        home-assistant-14.0.0                   2023.6.1
+k8s-mediaserver                 media           1               2023-03-17 03:27:11.726061311 +0000 UTC deployed        k8s-mediaserver-0.7.0                   1.16.0
+longhorn                        longhorn-system 1               2023-03-15 02:45:45.949973718 +0000 UTC deployed        longhorn-1.4.1                          v1.4.1
+metallb                         metallb         1               2023-03-21 04:56:44.61613837 +0000 UTC  deployed        metallb-0.13.9                          v0.13.9
+nfs-subdir-external-provisioner default         1               2023-02-26 07:26:03.523988322 +0000 UTC deployed        nfs-subdir-external-provisioner-4.0.17  4.0.2
+pihole                          pihole          1               2023-02-26 19:25:14.222904716 +0000 UTC deployed        pihole-2.11.1                           2023.01
+playlist-sync                   media           1               2023-10-14 20:16:53.0414407 +0000 UTC   deployed        plex-playlist-sync-0.0.1                latest
+plex                            media           1               2023-02-27 01:56:34.751258518 +0000 UTC deployed        kube-plex-0.2.7                         1.16.0.1226-7eb2c8f6f
+portainer                       portainer       5               2023-12-26 14:53:30.795943812 -0500 EST deployed        portainer-1.0.44                        ce-latest-ee-2.18.4
+readarr                         media           1               2023-08-18 04:26:32.765252296 +0000 UTC deployed        readarr-17.0.1                          0.3.1.2096
+requestrr                       media           1               2023-03-19 18:33:30.487059391 +0000 UTC deployed        requestrr-4.0.9                         2.1.2
+tautuli                         media           1               2023-10-14 20:15:12.654131758 +0000 UTC deployed        tautulli-15.0.5                         2.13.1
+traefik                         traefik-system  1               2023-10-14 00:21:48.160333836 -0400 EDT deployed        traefik-21.0.8                          2.10.5
