@@ -1,0 +1,11 @@
+nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
+portainer                       https://portainer.github.io/k8s/
+metallb                         https://metallb.github.io/metallb
+nginx-stable                    https://helm.nginx.com/stable
+mojo2600                        https://mojo2600.github.io/pihole-kubernetes/
+bananaspliff                    https://bananaspliff.github.io/geek-charts
+utkuozdemir                     https://utkuozdemir.org/helm-charts
+longhorn                        https://charts.longhorn.io
+luiscajl                        https://raw.githubusercontent.com/luiscajl/helm-charts/gh-pages
+jetstack                        https://charts.jetstack.io
+truecharts                      https://charts.truecharts.org/
