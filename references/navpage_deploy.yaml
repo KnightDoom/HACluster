@@ -1,0 +1,161 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "11"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"labels":{"io.portainer.kubernetes.application.kind":"content","io.portainer.kubernetes.application.name":"navhome","io.portainer.kubernetes.application.owner":"admin","io.portainer.kubernetes.application.stack":"navhome","io.portainer.kubernetes.application.stackid":"1"},"name":"navpage","namespace":"default"},"spec":{"progressDeadlineSeconds":600,"replicas":1,"revisionHistoryLimit":10,"selector":{"matchLabels":{"app":"navhome"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"app":"navhome"}},"spec":{"containers":[{"env":[{"name":"link1","value":"http://plex.home"},{"name":"image1","value":"images/plex.png"},{"name":"link2","value":"https://proxmox.home:8006/"},{"name":"image2","value":"images/proxmox.png"},{"name":"link3","value":"https://masternode.home:30779/"},{"name":"image3","value":"images/portainer.png"},{"name":"link4","value":"http://pihole.home/"},{"name":"image4","value":"images/pihole.png"},{"name":"link5","value":"http://omv.home/"},{"name":"image5","value":"images/omv.png"},{"name":"link6","value":"https://chat.openai.com/chat/9182aa64-1cbf-4b29-8cd8-20cf028102e1"},{"name":"image6","value":"images/chatgpt.png"},{"name":"link7","value":"http://nav.home/"},{"name":"image7","value":"https://www.juma.org/wp-content/uploads/2015/06/Under-Construction.jpg"},{"name":"link8","value":"http://nav.home/"},{"name":"image8","value":"https://www.juma.org/wp-content/uploads/2015/06/Under-Construction.jpg"},{"name":"link9","value":"http://nav.home/"},{"name":"image9","value":"https://www.juma.org/wp-content/uploads/2015/06/Under-Construction.jpg"}],"image":"knightdoom/nav-home-image:1.1","imagePullPolicy":"Always","lifecycle":{"postStart":{"exec":{"command":["sh","-c","echo \"const element1 = document.getElementById(\\\"1\\\");\\nconst element2 = document.getElementById(\\\"2\\\");\\nconst element3 = document.getElementById(\\\"3\\\");\\nconst element4 = document.getElementById(\\\"4\\\");\\nconst element5 = document.getElementById(\\\"5\\\");\\nconst element6 = document.getElementById(\\\"6\\\");\\nconst element7 = document.getElementById(\\\"7\\\");\\nconst element8 = document.getElementById(\\\"8\\\");\\nconst element9 = document.getElementById(\\\"9\\\");\\nelement1.dataset.href = \\\"$link1\\\";\\nelement1.style.backgroundImage = 'url(\\\"$image1\\\")';\\nelement2.dataset.href = \\\"$link2\\\";\\nelement2.style.backgroundImage = 'url(\\\"$image2\\\")';\\nelement3.dataset.href = \\\"$link3\\\";\\nelement3.style.backgroundImage =  'url(\\\"$image3\\\")';\\nelement4.dataset.href = \\\"$link4\\\";\\nelement4.style.backgroundImage = 'url(\\\"$image4\\\")';\\nelement5.dataset.href = \\\"$link5\\\";\\nelement5.style.backgroundImage = 'url(\\\"$image5\\\")';\\nelement6.dataset.href = \\\"$link6\\\";\\nelement6.style.backgroundImage = 'url(\\\"$image6\\\")';\\nelement7.dataset.href = \\\"$link7\\\";\\nelement7.style.backgroundImage = 'url(\\\"$image7\\\")';\\nelement8.dataset.href = \\\"$link8\\\";\\nelement8.style.backgroundImage = 'url(\\\"$image8\\\")';\\nelement9.dataset.href = \\\"$link9\\\";\\nelement9.style.backgroundImage = 'url(\\\"$image9\\\")';\\n\" \u003e /var/www/html/linkupdate.js"]}}},"name":"navhome","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+  creationTimestamp: "2023-03-01T00:03:25Z"
+  generation: 12
+  labels:
+    io.portainer.kubernetes.application.kind: content
+    io.portainer.kubernetes.application.name: navhome
+    io.portainer.kubernetes.application.owner: admin
+    io.portainer.kubernetes.application.stack: navhome
+    io.portainer.kubernetes.application.stackid: "1"
+  name: navpage
+  namespace: default
+  resourceVersion: "726890"
+  uid: 1e17fb33-7d4e-4930-afcb-3f7744d2e207
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 0
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: navhome
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        kubectl.kubernetes.io/restartedAt: "2023-03-02T06:35:32Z"
+        scheduler.alpha.kubernetes.io/critical-pod: ""
+      creationTimestamp: null
+      labels:
+        app: navhome
+    spec:
+      containers:
+      - env:
+        - name: link1
+          value: http://plex.home
+        - name: image1
+          value: images/plex.png
+        - name: link2
+          value: https://proxmox.home:8006/
+        - name: image2
+          value: images/proxmox.png
+        - name: link3
+          value: https://masternode.home:30779/
+        - name: image3
+          value: images/portainer.png
+        - name: link4
+          value: http://pihole.home/
+        - name: image4
+          value: images/pihole.png
+        - name: link5
+          value: http://omv.home/
+        - name: image5
+          value: images/omv.png
+        - name: link6
+          value: https://chat.openai.com/chat/9182aa64-1cbf-4b29-8cd8-20cf028102e1
+        - name: image6
+          value: images/chatgpt.png
+        - name: link7
+          value: http://lh.home
+        - name: image7
+          value: https://i.imgur.com/tRvHOIh.png
+        - name: link8
+          value: http://nav.home/
+        - name: image8
+          value: https://www.juma.org/wp-content/uploads/2015/06/Under-Construction.jpg
+        - name: link9
+          value: http://nav.home/
+        - name: image9
+          value: https://www.juma.org/wp-content/uploads/2015/06/Under-Construction.jpg
+        - name: hlink1
+          value: http://192.168.86.236
+        - name: hlink2
+          value: https://192.168.86.20:8006
+        - name: hlink3
+          value: https://192.168.86.25:30779
+        - name: hlink4
+          value: http://192.168.86.231/admin
+        - name: hlink5
+          value: https://192.168.86.21
+        - name: hlink6
+          value: https://chat.openai.com/chat/9182aa64-1cbf-4b29-8cd8-20cf028102e1
+        - name: hlink7
+          value: http://192.168.86.234
+        - name: hlink8
+          value: http://nav.home/
+        - name: hlink9
+          value: http://nav.home/
+        image: knightdoom/nav-home-image:1.1
+        imagePullPolicy: Always
+        lifecycle:
+          postStart:
+            exec:
+              command:
+              - sh
+              - -c
+              - echo "const element1 = document.getElementById(\"1\");\nconst element2
+                = document.getElementById(\"2\");\nconst element3 = document.getElementById(\"3\");\nconst
+                element4 = document.getElementById(\"4\");\nconst element5 = document.getElementById(\"5\");\nconst
+                element6 = document.getElementById(\"6\");\nconst element7 = document.getElementById(\"7\");\nconst
+                element8 = document.getElementById(\"8\");\nconst element9 = document.getElementById(\"9\");\nelement1.dataset.href
+                = \"$link1\";\nelement1.style.backgroundImage = 'url(\"$image1\")';\nelement2.dataset.href
+                = \"$link2\";\nelement2.style.backgroundImage = 'url(\"$image2\")';\nelement3.dataset.href
+                = \"$link3\";\nelement3.style.backgroundImage =  'url(\"$image3\")';\nelement4.dataset.href
+                = \"$link4\";\nelement4.style.backgroundImage = 'url(\"$image4\")';\nelement5.dataset.href
+                = \"$link5\";\nelement5.style.backgroundImage = 'url(\"$image5\")';\nelement6.dataset.href
+                = \"$link6\";\nelement6.style.backgroundImage = 'url(\"$image6\")';\nelement7.dataset.href
+                = \"$link7\";\nelement7.style.backgroundImage = 'url(\"$image7\")';\nelement8.dataset.href
+                = \"$link8\";\nelement8.style.backgroundImage = 'url(\"$image8\")';\nelement9.dataset.href
+                = \"$link9\";\nelement9.style.backgroundImage = 'url(\"$image9\")';\n"
+                > /var/www/html/linkupdate.js && echo "const element1 = document.getElementById(\"1\");\nconst
+                element2 = document.getElementById(\"2\");\nconst element3 = document.getElementById(\"3\");\nconst
+                element4 = document.getElementById(\"4\");\nconst element5 = document.getElementById(\"5\");\nconst
+                element6 = document.getElementById(\"6\");\nconst element7 = document.getElementById(\"7\");\nconst
+                element8 = document.getElementById(\"8\");\nconst element9 = document.getElementById(\"9\");\nelement1.dataset.href
+                = \"$hlink1\";\nelement1.style.backgroundImage = 'url(\"$image1\")';\nelement2.dataset.href
+                = \"$hlink2\";\nelement2.style.backgroundImage = 'url(\"$image2\")';\nelement3.dataset.href
+                = \"$hlink3\";\nelement3.style.backgroundImage =  'url(\"$image3\")';\nelement4.dataset.href
+                = \"$hlink4\";\nelement4.style.backgroundImage = 'url(\"$image4\")';\nelement5.dataset.href
+                = \"$hlink5\";\nelement5.style.backgroundImage = 'url(\"$image5\")';\nelement6.dataset.href
+                = \"$hlink6\";\nelement6.style.backgroundImage = 'url(\"$image6\")';\nelement7.dataset.href
+                = \"$hlink7\";\nelement7.style.backgroundImage = 'url(\"$image7\")';\nelement8.dataset.href
+                = \"$hlink8\";\nelement8.style.backgroundImage = 'url(\"$image8\")';\nelement9.dataset.href
+                = \"$hlink9\";\nelement9.style.backgroundImage = 'url(\"$image9\")';\n"
+                > /var/www/html/linkupdatehard.js
+        name: navhome
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      priorityClassName: midhigh-priority
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  conditions:
+  - lastTransitionTime: "2023-03-15T06:40:36Z"
+    lastUpdateTime: "2023-03-15T06:40:36Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2023-03-01T00:03:25Z"
+    lastUpdateTime: "2023-03-16T03:20:17Z"
+    message: ReplicaSet "navpage-69f7f96b9" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 12
