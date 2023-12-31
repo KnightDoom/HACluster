@@ -15,6 +15,7 @@ https://github.com/TechSquidTV/UltimateHomeServer/tree/main
 https://github.com/bitnami-labs/sealed-secrets?tab=readme-ov-file#controller
 https://truecharts.org/charts/enterprise/authelia/Setup-Guide/#traefik-forwardauth-setup
 https://greg.jeanmart.me/2020/04/13/install-and-configure-a-kubernetes-cluster-w/
+
 Helm Chart Creation
 https://devopscube.com/create-helm-chart/
 
@@ -28,6 +29,8 @@ https://dkict.com/pfsense-haproxy-authelia/
 https://www.authelia.com/integration/kubernetes/chart/
 https://truecharts.org/manual/SCALE/guides/getting-started/
 https://www.authelia.com/integration/proxies/haproxy/
+
+https://truecharts.org/charts/enterprise/authelia/Setup-Guide/#traefik-forwardauth-setup
 
 
 https://codebeautify.org/yaml-editor-online
