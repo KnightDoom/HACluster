@@ -34,3 +34,8 @@ https://truecharts.org/charts/enterprise/authelia/Setup-Guide/#traefik-forwardau
 
 
 https://codebeautify.org/yaml-editor-online
+
+
+
+Others : 
+How to set NFS Mode in PVC : https://github.com/lorenzofaresin/nfs-subdir-external-provisioner/tree/configurable-mode-and-permissions
